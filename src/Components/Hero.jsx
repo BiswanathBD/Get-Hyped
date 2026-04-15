@@ -115,10 +115,10 @@ const Hero = () => {
           >
             {card.type === "stat" ? (
               <>
-                <span className="text-4xl font-bold">{card.stat}</span>
+                <span className="text-7xl font-bold">{card.stat}</span>
                 <div>
-                  <p className="font-semibold text-base">{card.title}</p>
-                  <p className="text-sm opacity-70">{card.sub}</p>
+                  <p className="font-semibold text-3xl border-b-2 mb-1 pb-1">{card.title}</p>
+                  <p className="text-lg">{card.sub}</p>
                 </div>
               </>
             ) : (
