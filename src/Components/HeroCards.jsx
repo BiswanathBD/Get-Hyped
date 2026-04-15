@@ -12,7 +12,7 @@ function randomRotation(min, max) {
 const CARDS = [
   {
     type: "stat",
-    bg: "#3B82F6", // blue
+    bg: "#3B82F6",
     stat: "10M+",
     title: "Organische views",
     sub: "Groei door slimme content",
@@ -23,7 +23,7 @@ const CARDS = [
   },
   {
     type: "stat",
-    bg: "#34D399", // green
+    bg: "#34D399",
     stat: "30+",
     title: "Merken geholpen",
     sub: "Van start-up tot multinational",
@@ -39,7 +39,6 @@ const HOVER_SCALE = 1.1;
 
 function HeroCard({ card, isFirst, isLast }) {
   const cardRef = useRef(null);
-
   const [startRotation] = useState(() => randomRotation(2, 7));
 
   function handleMouseEnter() {
@@ -67,7 +66,7 @@ function HeroCard({ card, isFirst, isLast }) {
   }
 
   const wrapperStyle = {
-    width: "calc((100% - 3 * 12px) / 4)",
+    width: "calc((100% - (var(--cols) - 1) * 12px) / var(--cols))",
     aspectRatio: "3 / 4",
     position: "relative",
     zIndex: 1,
@@ -120,15 +119,22 @@ function HeroCard({ card, isFirst, isLast }) {
 
 function HeroCards() {
   return (
-    <div className="flex items-center px-8">
-      {CARDS.map((card, index) => (
-        <HeroCard
-          key={index}
-          card={card}
-          isFirst={index === 0}
-          isLast={index === CARDS.length - 1}
-        />
-      ))}
+    <div className="hero-cards flex items-center px-8" style={{ "--cols": 2 }}>
+      <style>{`
+        @media (min-width: 768px)  { .hero-cards { --cols: 3 !important; } }
+        @media (min-width: 1024px) { .hero-cards { --cols: 4 !important; } }
+      `}</style>
+
+      <HeroCard card={CARDS[0]} isFirst isLast={false} />
+      <HeroCard card={CARDS[1]} isFirst={false} isLast={false} />
+
+      <span className="hidden md:contents">
+        <HeroCard card={CARDS[2]} isFirst={false} isLast={false} />
+      </span>
+
+      <span className="hidden lg:contents">
+        <HeroCard card={CARDS[3]} isFirst={false} isLast />
+      </span>
     </div>
   );
 }
