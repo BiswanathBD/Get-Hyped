@@ -3,7 +3,7 @@ import HeroCards from "./HeroCards";
 const Hero = () => {
   return (
     <section className="my-8 md:my-16 overflow-hidden">
-      <div className="mx-8">
+      <div className="mx-4 md:mx-8">
         <h1 className="text-[clamp(36px,6.5vw,100px)] leading-none font-semibold w-8/12">
           Get Hyped. Get Noticed. Get Results.
         </h1>

@@ -4,6 +4,7 @@ import SkewBtn from "./Shared/SkewBtn";
 
 const Navbar = () => {
   const navigationLinks = ["Expertise", "Work", "About", "Contact"];
+  
   return (
     <div className="flex justify-between items-center mx-8 my-6">
       <Logo />

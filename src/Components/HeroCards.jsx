@@ -34,9 +34,6 @@ const CARDS = [
   },
 ];
 
-const HOVER_MARGIN = 64;
-const HOVER_SCALE = 1.1;
-
 function HeroCard({ card, isFirst, isLast }) {
   const cardRef = useRef(null);
   const [startRotation] = useState(() => randomRotation(2, 7));
@@ -44,9 +41,9 @@ function HeroCard({ card, isFirst, isLast }) {
   function handleMouseEnter() {
     gsap.to(cardRef.current, {
       rotation: 0,
-      scale: HOVER_SCALE,
-      marginLeft: isFirst ? 0 : HOVER_MARGIN,
-      marginRight: isLast ? 0 : HOVER_MARGIN,
+      scale: 1.1,
+      marginLeft: isFirst ? 0 : 64,
+      marginRight: isLast ? 0 : 64,
       zIndex: 10,
       duration: 0.5,
       ease: "back.out(1.7)",
@@ -84,7 +81,7 @@ function HeroCard({ card, isFirst, isLast }) {
   return (
     <div
       ref={cardRef}
-      className="rounded-2xl cursor-pointer shrink-0 overflow-hidden"
+      className="rounded-2xl shrink-0 overflow-hidden"
       style={wrapperStyle}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
