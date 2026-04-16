@@ -26,9 +26,9 @@ const LearnMore = () => {
             content zonder strategie. Nooit meer content zonder resultaat.
           </p>
           <SkewBtn>
-            <a className="border tex-[2vw] sm:text-[clamp(8px,1.5vw,16px)] font-bold py-1 pr-1 pl-2 rounded-xl flex items-center gap-2">
+            <a className="group border tex-[2vw] sm:text-[clamp(8px,1.5vw,16px)] font-bold py-1 pr-1 pl-2 rounded-xl flex items-center gap-2">
               <span>Leer ons kennen</span>{" "}
-              <span className="bg-black p-2.5 rounded-lg">
+              <span className="bg-black p-2.5 rounded-lg group-hover:rounded-xl transition-all">
                 <FaArrowRight color="white" />
               </span>
             </a>

@@ -9,10 +9,10 @@ function randomRotation(min, max) {
   return degree * direction;
 }
 
-const CARDS = [
+const cards = [
   {
     type: "stat",
-    bg: "#3B82F6",
+    bg: "#0d8dff",
     stat: "10M+",
     title: "Organische views",
     sub: "Groei door slimme content",
@@ -63,14 +63,14 @@ function HeroCard({ card, isFirst, isLast }) {
   }
 
   const wrapperStyle = {
-    width: "calc((100% - (var(--cols) - 1) * 12px) / var(--cols))",
+    width: "calc((100% - (var(--cols) - 1) * 1px) / var(--cols))",
     aspectRatio: "3 / 4",
     position: "relative",
     zIndex: 1,
     transform: `rotate(${startRotation}deg)`,
     backgroundColor: card.bg ?? undefined,
     ...(card.type === "stat" && {
-      padding: "1.25rem",
+      padding: "0 1.6rem 1.6rem",
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
@@ -81,7 +81,7 @@ function HeroCard({ card, isFirst, isLast }) {
   return (
     <div
       ref={cardRef}
-      className="rounded-2xl shrink-0 overflow-hidden"
+      className="rounded-[40px] shrink-0 overflow-hidden"
       style={wrapperStyle}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -89,7 +89,7 @@ function HeroCard({ card, isFirst, isLast }) {
       {card.type === "stat" ? (
         <>
           <span
-            style={{ fontSize: "clamp(2rem, 4vw, 4.5rem)", fontWeight: 700 }}
+            style={{ fontSize: "clamp(2rem, 5vw, 5rem)", fontWeight: 600 }}
           >
             {card.stat}
           </span>
@@ -116,21 +116,21 @@ function HeroCard({ card, isFirst, isLast }) {
 
 function HeroCards() {
   return (
-    <div className="hero-cards flex items-center px-8" style={{ "--cols": 2 }}>
+    <div className="hero-cards flex items-center px-8 mt-8" style={{ "--cols": 2 }}>
       <style>{`
         @media (min-width: 768px)  { .hero-cards { --cols: 3 !important; } }
         @media (min-width: 1024px) { .hero-cards { --cols: 4 !important; } }
       `}</style>
 
-      <HeroCard card={CARDS[0]} isFirst isLast={false} />
-      <HeroCard card={CARDS[1]} isFirst={false} isLast={false} />
+      <HeroCard card={cards[0]} isFirst isLast={false} />
+      <HeroCard card={cards[1]} isFirst={false} isLast={false} />
 
       <span className="hidden md:contents">
-        <HeroCard card={CARDS[2]} isFirst={false} isLast={false} />
+        <HeroCard card={cards[2]} isFirst={false} isLast={false} />
       </span>
 
       <span className="hidden lg:contents">
-        <HeroCard card={CARDS[3]} isFirst={false} isLast />
+        <HeroCard card={cards[3]} isFirst={false} isLast />
       </span>
     </div>
   );

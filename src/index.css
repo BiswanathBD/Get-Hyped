@@ -4,3 +4,12 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #faf4ec;
 }
+
+/* hide scrollbar */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}

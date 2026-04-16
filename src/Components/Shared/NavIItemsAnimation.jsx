@@ -14,8 +14,8 @@ const NavIItemsAnimation = ({ children }) => {
   return (
     <>
       <motion.a
-        href={`/${children}`}
-        className="relative overflow-hidden px-4 py-2 rounded-lg cursor-pointer"
+        href="#"
+        className="relative overflow-hidden px-3.5 py-2 rounded-lg cursor-pointer"
         initial="rest"
         whileHover="hover"
         animate="rest"
@@ -24,7 +24,7 @@ const NavIItemsAnimation = ({ children }) => {
         <motion.span
           className="absolute inset-0 bg-orange-600 rounded-lg"
           variants={variants}
-          transition={{ transition, delay: 0, duration: 0.30 }}
+          transition={{ transition, delay: 0, duration: 0.3 }}
         />
 
         {/* black bg */}
