@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import "lenis/dist/lenis.css";
 import { ReactLenis } from "lenis/react";
 import Content from "./Components/Content";
+import Brands from "./Components/Brands";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <LearnMore />
       <Expertise />
       <Content />
+      <Brands />
     </>
   );
 }
