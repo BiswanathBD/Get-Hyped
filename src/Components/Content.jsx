@@ -103,7 +103,7 @@ const Content = () => {
       >
         {cards.map((card, i) => (
           <div
-            key={card.brand}
+            key={card.title}
             ref={(el) => (cardRefs.current[i] = el)}
             className="flex-1"
           >
