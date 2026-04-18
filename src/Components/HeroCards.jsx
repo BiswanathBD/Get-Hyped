@@ -70,7 +70,7 @@ function HeroCard({ card, isFirst, isLast }) {
     transform: `rotate(${startRotation}deg)`,
     backgroundColor: card.bg ?? undefined,
     ...(card.type === "stat" && {
-      padding: "0 1.6rem 1.6rem",
+      padding: "0 1.6vw 1.6vw",
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
@@ -81,7 +81,7 @@ function HeroCard({ card, isFirst, isLast }) {
   return (
     <div
       ref={cardRef}
-      className="rounded-[40px] shrink-0 overflow-hidden"
+      className="rounded-[3vw] shrink-0 overflow-hidden"
       style={wrapperStyle}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -94,7 +94,7 @@ function HeroCard({ card, isFirst, isLast }) {
             {card.stat}
           </span>
           <div>
-            <p className="font-semibold text-2xl border-b-2 mb-1 pb-1">
+            <p className="font-semibold text-lg sm:text-2xl border-b-2 mb-1 pb-1">
               {card.title}
             </p>
             <p className="text-base opacity-70">{card.sub}</p>
