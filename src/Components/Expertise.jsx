@@ -100,7 +100,7 @@ const Expertise = () => {
         <div
           key={card.number}
           ref={(el) => (cardRefs.current[i] = el)}
-          className="p-8 md:p-12 my-8 rounded-2xl sticky top-16 w-full h-[calc(100vh-7rem)] will-change-transform flex flex-col justify-between"
+          className="p-8 md:p-12 my-8 rounded-4xl sticky top-16 w-full h-[calc(100vh-7rem)] will-change-transform flex flex-col justify-between"
           style={{ backgroundColor: card.bg }}
         >
           <aside className="relative flex-1">

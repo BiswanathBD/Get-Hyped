@@ -5,6 +5,7 @@ import Expertise from "./Components/Expertise";
 import Navbar from "./Components/Navbar";
 import "lenis/dist/lenis.css";
 import { ReactLenis } from "lenis/react";
+import Content from "./Components/Content";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <LearnMore />
       <Expertise />
+      <Content />
     </>
   );
 }

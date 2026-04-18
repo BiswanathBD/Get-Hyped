@@ -58,7 +58,7 @@ const Navbar = () => {
         <SkewBtn>
           <a
             href="#"
-            className="bg-fuchsia-300/80 py-3 pl-2 pr-1 rounded-xl font-medium"
+            className="bg-[#fcb8fa] py-3 pl-2 pr-1 rounded-xl font-medium"
           >
             Get Results <span className="bg-white p-2 rounded-lg">🔥</span>
           </a>
