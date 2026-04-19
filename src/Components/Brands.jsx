@@ -92,7 +92,7 @@ const Brands = () => {
         </Swiper>
       </div>
 
-      <div className="mb-[4vw] mx-4 md:mx-8 h-px bg-neutral-300" />
+      <div className="mb-[4vw] h-0.5 mx-4 md:mx-8 bg-neutral-300" />
     </div>
   );
 };

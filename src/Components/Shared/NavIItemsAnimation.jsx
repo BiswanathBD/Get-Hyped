@@ -15,7 +15,7 @@ const NavIItemsAnimation = ({ children }) => {
     <>
       <motion.a
         href="#"
-        className="relative overflow-hidden px-3.5 py-2 rounded-lg cursor-pointer"
+        className="relative overflow-hidden px-3.5 py-2 rounded-lg cursor-pointer bg-white"
         initial="rest"
         whileHover="hover"
         animate="rest"

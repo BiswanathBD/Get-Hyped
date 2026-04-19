@@ -7,6 +7,8 @@ import "lenis/dist/lenis.css";
 import { ReactLenis } from "lenis/react";
 import Content from "./Components/Content";
 import Brands from "./Components/Brands";
+import GetHyped from "./Components/GetHyped";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Expertise />
       <Content />
       <Brands />
+      <GetHyped />
+      <Footer />
     </>
   );
 }
