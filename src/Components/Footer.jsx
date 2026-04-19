@@ -138,7 +138,11 @@ const Footer = () => {
         </div>
 
         {/* sticker */}
-          <img src={icon} alt="sticker" className="stickerIcon absolute w-[clamp(4rem,20vw,7.5rem)] -top-[3vw] right-[8vw]" />
+        <img
+          src={icon}
+          alt="sticker"
+          className="stickerIcon absolute w-[clamp(4rem,20vw,7.5rem)] -top-[3vw] right-[8vw]"
+        />
       </div>
 
       {/* footer content */}
@@ -159,14 +163,14 @@ const Footer = () => {
 
           <div>
             {/* navigation links */}
-            <nav className="flex gap-2 justify-center text-[clamp(0.6rem,1.8vw,2rem)] lg:text-[clamp(0.5rem,1vw,0.9rem)] font-semibold mt-4">
+            <nav className="flex gap-2 justify-center text-[clamp(1rem,2vw,2rem)] lg:text-[clamp(0.5rem,1vw,0.9rem)] font-semibold mt-4 sm:mt-6 md:mt-8 lg:mt-0">
               {navigationLinks.map((link) => (
                 <NavIItemsAnimation key={link}>{link}</NavIItemsAnimation>
               ))}
             </nav>
 
             {/* social links */}
-            <div className="flex justify-center sm:justify-start items-center gap-2 text-[clamp(0.8rem,2vw,2rem)] lg:text-[clamp(0.6rem,1.2vw,1rem)] mt-4 lg:mt-[1.5vw] sm:mt-6 font-bold">
+            <div className="flex justify-center sm:justify-start items-center gap-2 text-[clamp(1rem,2vw,2.2rem)] lg:text-[clamp(0.6rem,1.2vw,1rem)] mt-4 lg:mt-[1.5vw] sm:mt-6 font-bold">
               <span className="hidden sm:block">Follow Us</span>
               <span className="p-3 lg:p-[0.8vw] bg-white rounded-full hover:scale-105 transition-all">
                 <FaLinkedinIn />
@@ -184,9 +188,9 @@ const Footer = () => {
           </div>
 
           {/* contact */}
-          <div className="text-center sm:text-left text-[clamp(0.6rem,1.5vw,1.8rem)]  lg:text-[0.8vw] font-medium flex flex-col gap-[1vw]">
+          <div className="text-center sm:text-left text-[clamp(1rem,2vw,1.8rem)]  lg:text-[0.8vw] font-medium flex flex-col gap-[1vw]">
             <p className="flex flex-col">
-              <span className="font-bold hidden sm:block text-[clamp(0.8rem,1.8vw,2rem)] lg:text-[1vw]">
+              <span className="font-bold hidden sm:block text-[clamp(1.2rem,2vw,2.2rem)] lg:text-[1vw]">
                 Contact
               </span>
               <span>info@gethyped.nl</span>
@@ -194,7 +198,7 @@ const Footer = () => {
             </p>
 
             <p className="flex flex-col">
-              <span className="font-bold hidden sm:block text-[clamp(0.8rem,1.8vw,2rem)] lg:text-[1vw]">
+              <span className="font-bold hidden sm:block text-[clamp(1.2rem,2vw,2.2rem)] lg:text-[1vw]">
                 Adres
               </span>
               <span>Beltrumsestraat 6,</span>
@@ -203,7 +207,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-[#eae4d8] lg:bg-transparent flex flex-col sm:flex-row-reverse justify-center sm:justify-end items-center text-[clamp(0.7rem,0.5vw,0.8rem)] lg:text-[0.8vw] text-neutral-500 pt-4 pb-4 lg:pt-[1vw] lg:pb-0 px-[4vw] gap-[2vw] sm:gap-[12vw] lg:gap-4 lg:justify-between">
+        <div className="bg-[#eae4d8] lg:bg-transparent flex flex-col sm:flex-row-reverse justify-center sm:justify-end items-center text-[clamp(0.8rem,1vw,1rem)] lg:text-[0.8vw] text-neutral-500 pt-4 pb-4 lg:pt-[1vw] lg:pb-0 px-[4vw] gap-[2vw] sm:gap-[12vw] lg:gap-4 lg:justify-between">
           <p>Privacyvoorwaarden</p>
           <p className="sm:hidden">© 2025 Get Hyped</p>
           <p>© Design by Dylan</p>
