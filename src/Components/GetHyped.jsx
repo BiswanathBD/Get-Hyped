@@ -15,6 +15,7 @@ const GetHyped = () => {
   const createLogoInstance = (x, y, vx, vy) => {
     const color = randomColors[Math.floor(Math.random() * randomColors.length)];
     const logoDiv = document.createElement("div");
+    const rotationValue = vx > 0 ? 10 : -10;
 
     logoDiv.className = "absolute z-10 pointer-events-none select-none";
     logoDiv.style.left = `${x}px`;
@@ -47,6 +48,7 @@ const GetHyped = () => {
         opacity: 1,
         x: vx * 6,
         y: vy * 6,
+        rotate: rotationValue,
         duration: 0.9,
         ease: "power3.out",
         onComplete: () => {
@@ -54,6 +56,7 @@ const GetHyped = () => {
             scale: 0,
             opacity: 0,
             duration: 0.4,
+            rotate: 0,
             onComplete: () => logoDiv.remove(),
           });
         },
@@ -104,7 +107,7 @@ const GetHyped = () => {
 
   return (
     <div className="mt-[10vw] hidden sm:flex relative overflow-visible flex-col items-center justify-center bg-transparent">
-      <div ref={containerRef} className="relative z-10 ">
+      <div ref={containerRef} className="relative z-10 w-full">
         <h1 className="text-[clamp(4.5rem,6.4vw,6.4rem)] font-bold text-center select-none leading-none">
           Let's Get Hyped!
         </h1>
@@ -124,8 +127,7 @@ const GetHyped = () => {
             href="#"
             className="bg-[#fa5424] text-[clamp(8px,1.5vw,16px)] py-1.25 pl-2 pr-1.25 rounded-xl font-semibold text-white flex items-center gap-2 h-fit"
           >
-            Get Results{" "}
-            <span className="bg-white p-1.75 rounded-lg">🔥</span>
+            Get Results <span className="bg-white p-1.75 rounded-lg">🔥</span>
           </a>
         </SkewBtn>
       </div>

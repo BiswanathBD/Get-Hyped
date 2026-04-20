@@ -1,6 +1,6 @@
 import SkewBtn from "./Shared/SkewBtn";
 import { FaArrowRight, FaArrowUpRightFromSquare } from "react-icons/fa6";
-import salontopper from "../assets/Loop Salontopper.mp4";
+import salontopper from "../assets/Loop-Salontopper.mp4";
 import newReach from "../assets/new-reach-loop.mp4";
 import petrolhead from "../assets/petrolhead-loop.mp4";
 import { MdArrowOutward } from "react-icons/md";

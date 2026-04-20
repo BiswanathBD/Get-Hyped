@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import gsap from "gsap";
-import salonVideo from "../assets/Loop Salontopper.mp4";
+import salonVideo from "../assets/Loop-Salontopper.mp4";
 import petrolheadVideo from "../assets/petrolhead-loop.mp4";
 
 function randomRotation(min, max) {

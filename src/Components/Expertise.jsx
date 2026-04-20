@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import video from "../assets/Loop Salontopper.mp4";
+import salontopper from "../assets/Loop-Salontopper.mp4";
+import newReach from "../assets/new-reach-loop.mp4";
+import petrolhead from "../assets/petrolhead-loop.mp4";
 import SkewBtn from "./Shared/SkewBtn";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -16,6 +18,7 @@ const cards = [
     body: "We duiken diep in jouw merk, doelgroep en doelen. En vertalen data naar een duidelijk plan met formats die écht impact maken. Zo weet je precies waarom het werkt.",
     cta: "Meer over social strategie",
     bg: "#fff",
+    video: salontopper,
   },
   {
     number: "02",
@@ -25,6 +28,7 @@ const cards = [
     body: "We maken content die opvalt. Blijft hangen. En jouw doelgroep raakt. Creatief, snel en energiek. Altijd met het doel voor ogen.",
     cta: "Meer over content creatie",
     bg: "#f0abfc",
+    video: newReach,
   },
   {
     number: "03",
@@ -34,6 +38,7 @@ const cards = [
     body: "De juiste content verdient het om gezien te worden. We verspreiden de content waar jouw doelgroep is. Zo raakt jouw merk de juiste mensen, precies waar en wanneer het telt.",
     cta: "Meer over activatie",
     bg: "#34d399",
+    video: petrolhead,
   },
   {
     number: "04",
@@ -43,6 +48,7 @@ const cards = [
     body: "We duiken in de cijfers om te snappen wat écht werkt. En sturen jouw content scherp bij.",
     cta: "Meer over data",
     bg: "#0d8dff",
+    video: salontopper,
   },
 ];
 
@@ -128,7 +134,7 @@ const Expertise = () => {
           <aside className="flex flex-2 flex-col justify-between sm:flex-row-reverse sm:items-end relative">
             <div className="sm:flex-1">
               <video
-                src={video}
+                src={card.video}
                 className={`sm:absolute w-1/2 sm:w-2/5 md:w-1/4 lg:w-2/9 bottom-0 right-0 aspect-3/4 object-cover rounded-2xl border-5 ${i === 0 ? "border-red-600" : "border-white"} rotate-3 m-2`}
                 autoPlay
                 loop
