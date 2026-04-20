@@ -46,7 +46,7 @@ const Brands = () => {
         These brands got hyped.
       </h2>
 
-      <div className="pb-[6vw] pt-[4vw] overflow-hidden">
+      <div className="pb-[clamp(4rem,6vw,6rem)] pt-[4vw] overflow-hidden">
         <Swiper
           onTouchStart={() => setIsGrab(true)}
           onTouchEnd={() => setIsGrab(false)}
@@ -92,7 +92,7 @@ const Brands = () => {
         </Swiper>
       </div>
 
-      <div className="mb-[4vw] h-0.5 mx-4 md:mx-8 bg-neutral-300" />
+      <div className="mb-[clamp(4rem,4vw,8rem)] h-0.5 mx-4 md:mx-8 bg-neutral-300" />
     </div>
   );
 };

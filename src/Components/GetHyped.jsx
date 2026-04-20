@@ -103,11 +103,8 @@ const GetHyped = () => {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="mt-[10vw] hidden sm:flex relative overflow-visible py-40 flex-col items-center justify-center bg-transparent"
-    >
-      <div className="relative z-10 pointer-events-none">
+    <div className="mt-[10vw] hidden sm:flex relative overflow-visible flex-col items-center justify-center bg-transparent">
+      <div ref={containerRef} className="relative z-10 ">
         <h1 className="text-[clamp(4.5rem,6.4vw,6.4rem)] font-bold text-center select-none leading-none">
           Let's Get Hyped!
         </h1>
@@ -125,10 +122,10 @@ const GetHyped = () => {
         <SkewBtn>
           <a
             href="#"
-            className="bg-[#fa5424] py-2 pl-4 pr-3 rounded-xl font-semibold text-white flex items-center gap-2 h-fit"
+            className="bg-[#fa5424] text-[clamp(8px,1.5vw,16px)] py-1.25 pl-2 pr-1.25 rounded-xl font-semibold text-white flex items-center gap-2 h-fit"
           >
             Get Results{" "}
-            <span className="bg-white p-1.5 rounded-lg text-sm">🔥</span>
+            <span className="bg-white p-1.75 rounded-lg">🔥</span>
           </a>
         </SkewBtn>
       </div>

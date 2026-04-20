@@ -163,7 +163,7 @@ const Footer = () => {
 
           <div>
             {/* navigation links */}
-            <nav className="flex gap-2 justify-center text-[clamp(1rem,2vw,2rem)] lg:text-[clamp(0.5rem,1vw,0.9rem)] font-semibold mt-4 sm:mt-6 md:mt-8 lg:mt-0">
+            <nav className="flex gap-2 justify-center text-[clamp(0.6rem,2.5vw,2rem)] lg:text-[clamp(0.5rem,1vw,0.9rem)] font-semibold mt-4 sm:mt-6 md:mt-8 lg:mt-0">
               {navigationLinks.map((link) => (
                 <NavIItemsAnimation key={link}>{link}</NavIItemsAnimation>
               ))}
