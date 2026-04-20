@@ -120,11 +120,12 @@ const Content = () => {
               {/* Background Video */}
               <video
                 ref={(el) => (videoRefs.current[i] = el)}
-                src={card.video}
+                src={`${card.video}#t=0.001`}
                 className="w-full aspect-3/4 object-cover"
                 loop
                 muted
                 playsInline
+                preload="metadata"
               />
 
               <div className="absolute bottom-0 left-0 right-0 h-[40%] flex items-end m-[clamp(0.5rem,1vw,1rem)]">

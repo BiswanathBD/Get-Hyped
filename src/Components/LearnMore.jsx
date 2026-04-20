@@ -12,7 +12,14 @@ const LearnMore = () => {
       </h2>
 
       <article className="flex flex-col sm:flex-row justify-between items-end mt-12 md:mt-24">
-        <video src={newReach} autoPlay loop muted className="rounded-2xl w-10/12 mx-auto my-8 rotate-6 aspect-3/4 sm:hidden overflow-hidden object-cover "></video>
+        <video
+          src={newReach}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="rounded-2xl w-10/12 mx-auto my-8 rotate-6 aspect-3/4 sm:hidden overflow-hidden object-cover "
+        ></video>
         <img
           src={anniekBril}
           alt="Anniek Bril"
@@ -37,7 +44,6 @@ const LearnMore = () => {
 
         <div className="hidden sm:flex justify-center md:w-1/6">
           <button className="group relative border w-fit p-3 rounded-xl m-2 overflow-hidden hover:scale-[1.02] transition-all hover:-skew-y-2">
-
             <span className="block transition-transform duration-300 ease-in-out group-hover:translate-y-[300%]">
               <FaArrowDown color="red" />
             </span>

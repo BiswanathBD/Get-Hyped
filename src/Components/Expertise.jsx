@@ -139,6 +139,7 @@ const Expertise = () => {
                 autoPlay
                 loop
                 muted
+                playsInline
               ></video>
             </div>
 
