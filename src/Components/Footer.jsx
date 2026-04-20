@@ -149,11 +149,11 @@ const Footer = () => {
       <div className="lg:absolute right-[3vw] bottom-[1vw]">
         <div className="bg-[#eae4d8] lg:bg-transparent -mt-px pt-8 sm:pt-4 w-full flex flex-col sm:flex-row gap-[4vw] sm:gap-[10vw] lg:gap-16 px-[4vw] sm:items-center">
           {/* get hyped btn for mobile only */}
-          <div className="sm:hidden flex justify-center mt-4">
+          <div className="sm:hidden flex justify-center my-4">
             <SkewBtn>
               <a
                 href="#"
-                className="bg-[#fa5424] py-3 pl-2 text-[clamp(1rem,2vw,2rem)] pr-1 rounded-xl font-semibold text-white"
+                className="bg-[#fa5424] py-3 pl-2 text-[clamp(0.6rem,4vw,1.2rem)] pr-1 rounded-xl font-semibold text-white"
               >
                 Get Hyped! Neem contact op{" "}
                 <span className="bg-white p-2 rounded-lg">🔥</span>
