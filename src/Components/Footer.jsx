@@ -13,7 +13,7 @@ const Footer = () => {
   const navigationLinks = ["Expertises", "Work", "About", "Contact"];
 
   return (
-    <footer className="relative w-full px-4 md:px-8">
+    <footer className="relative w-full px-4 md:px-8 z-12">
       {/* small screen logo section */}
       <div className="relative sm:hidden w-full">
         <svg
